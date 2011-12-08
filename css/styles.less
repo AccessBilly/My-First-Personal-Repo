@@ -1,0 +1,35 @@
+
+
+@import "reset.less";
+
+
+@nice-blue: #5B83AD;
+
+body {
+background: #CCCCCC;
+}
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	background: @nice-blue;
+	padding: 10px;
+	.rounded-corners(12px);
+	header {
+			.rounded-corners;
+			border: 1px dashed #AAA;
+			h1 {
+			color: #FFF;
+			}
+			p {
+			color: #FFF;
+			}
+	}
+}
